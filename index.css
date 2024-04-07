@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --basic_color: white;
+}
+
+#main_container {
+    background-color: rgb(0, 13, 34);
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.circularheadingpics {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+}
+
+#footer-content {
+    position: sticky;
+    background-color: rgb(46, 46, 46);
+    width: 100vw;
+    height: 260px;
+    bottom: 0px;
+    left: 0px;
+    margin-top: calc(100vh - 60px);
+}
+
+#first_item {
+    display: flex;
+    align-items: center;
+    /* background-color: bisque; */
+    gap: 10px;
+}
+
+.span {
+    display: inline-block;
+}
+
+header {
+    padding: 20px 50px;
+}
+
+#search_item {
+    display: flex;
+    height: 60px;
+    width: 500px;
+    background-color: rgb(13, 38, 78);
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+#search_item #testcase {
+    background-color: transparent;
+    height: 100%;
+    color: white;
+    flex-grow: 2;
+    border: none;
+    /* This hides the border */
+    outline: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/*
+.play-pause-button {
+    width: 50px;
+    height: 50px;
+    background-image: url('play.png');
+     Add your play button icon
+}
+
+#play-pause-toggle:checked+.play-pause-button {
+    background-image: url('pause.png');
+    Add your pause button icon
+}
+
+Hide the checkbox
+#play-pause-toggle {
+    display: none;
+} */
+audio {
+    width: 300px;
+    /* Adjust the width as needed */
+}
+
+/* Style the play/pause button */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+    display: none;
+    /* Hide the default play/pause button */
+}
+
+/* Add custom play button */
+audio::-webkit-media-controls-play-button:before {
+    content: '\25B6';
+    /* Unicode character for play symbol */
+    font-size: 1.5em;
+}
+
+/* Add custom pause button */
+audio::-webkit-media-controls-pause-button:before {
+    content: '\II';
+    /* Unicode character for pause symbol */
+    font-size: 1.5em;
+}
+
+/* Style the progress bar */
+audio::-webkit-media-controls-enclosure {
+    /* background-color: #ccc; */
+    background-color: rgb(46, 46, 46);
+    border-radius: 5px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    order: 1;
+    /* Set order to 1 to move it to the left */
+    font-size: 0.8em;
+    color: #000;
+    /* Change color as needed */
+}
+
+/* Style the time remaining display */
+audio::-webkit-media-controls-time-remaining-display {
+    order: 2;
+    /* Set order to 2 to move it to the right */
+    font-size: 0.8em;
+    color: #c3b9b9;
+    /* Change color as needed */
+}
+
+audio::-webkit-media-controls-timeline {
+    /* background-color: #4CAF50; */
+    /* Set the background color of the timeline */
+}
+
+audio::-webkit-media-controls-timeline::-webkit-media-slider-thumb {
+    background-color: #ffffff;
+    /* Set the color of the slider thumb */
+}
+
+audio::-webkit-media-controls-play-button {
+    height: 100px;
+    width: 100px;
+}
+
+#playaudio {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+.footer-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#playaudio:active {
+    background-color: red;
+}
+
+.popularArtists {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#Popular_Artists {
+    margin: 0px 30px;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+#Popular_Artists::-webkit-scrollbar {
+    display: none;
+}
+
+.Popular_Artists-name {
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main_Sections {
+    width: 70vw;
+    overflow-y: scroll;
+    height: 100vh;
+    display: inline-block;
+}
+
+#main_Sections::-webkit-scrollbar {
+    display: none;
+}
+
+#Queue {
+    display: inline-block;
+    width: 25vw;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    overflow-y: scroll;
+}
+
+#Queue::-webkit-scrollbar {
+    display: none;
+}
+
+#Queue #heading {
+    height: 30px;
+    /* width: 100%; */
+    /* height: 200px; */
+    /* background-color: #c3b9b9; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* padding: 20px; */
+    background-color: #000;
+    color: white
+}
+
+#Queue #content {
+    background-color: red;
+    height: calc(100vh - 30px);
+
+    /* height: 40px; */
+    overflow-y: scroll;
+}
+
+#Queue #content::-webkit-scrollbar {
+    display: none;
+}
+
+/* #Queue::-webkit-scrollbar {
+    display: none;
+} */
+
+/* #Posters {
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.poster_content {
+    height: 100%;
+    width: 33%;
+
+}
+
+.poster_content:hover {
+    flex-grow: 4;
+    width: 50%;
+}
+
+#first_poster:hover+#second_poster,
+#first_poster:hover+#second_poster+#third_poster {
+    width: 25%;
+    height: 90%;
+}
+
+#second_poster:hover+#first_poster,
+#second_poster:hover+#first_poster+#third_poster {
+    width: 25%;
+    height: 90%;
+} */
+#Posters {
+    width: 100%;
+    height: 200px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.poster_content {
+    height: 100%;
+    width: 33%;
+    transition: width 0.3s;
+    /* Add smooth transition */
+}
+
+.poster_content:hover {
+    width: 50%;
+    /* filter: blur(0px); */
+}
+
+#first_poster:hover+#second_poster,
+#first_poster:hover+#second_poster+#third_poster {
+    width: 25%;
+    height: 90%;
+    filter: blur(3px);
+}
+
+#second_poster:hover+#first_poster,
+#second_poster:hover+#third_poster {
+    width: 25%;
+    height: 90%;
+    filter: blur(3px);
+}
+
+#third_poster:hover+#second_poster,
+#third_poster:hover+#second_poster+#first_poster {
+    width: 25%;
+    height: 20%;
+    filter: blur(3px);
+}
+
+/* #first_poster:hover~#second_poster,
+#first_poster:hover~#third_poster {
+    width: 25%;
+    height: 90%;
+    filter: blur(3px);
+}
+
+#second_poster:hover~#first_poster,
+#second_poster:hover~#third_poster {
+    width: 25%;
+    height: 90%;
+    filter: blur(3px);
+}
+
+#third_poster:hover~#second_poster,
+#third_poster:hover~#first_poster {
+    width: 25%;
+    height: 90%;
+    filter: blur(3px);
+} */
